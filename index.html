@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vishnupriya M — ECE Engineer & Web Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+html{ scroll-behavior:smooth; }
+
+:root{
+  --bg:#ffffff;
+  --card:#f9fafc;
+  --text:#222;
+  --muted:#5f6c7b;
+  --accent:#6c63ff;
+  --accent-light:#ecebff;
+  --radius:14px;
+  --shadow:0 8px 24px rgba(0,0,0,0.08);
+  --max-width:1100px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+  display:flex;
+  justify-content:center;
+  padding:40px 20px;
+}
+
+.wrap{width:100%;max-width:var(--max-width);}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:40px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo{
+  width:56px;
+  height:56px;
+  border-radius:14px;
+  background:linear-gradient(135deg,var(--accent),#00c4ff);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-weight:700;
+  font-size:20px;
+  box-shadow:var(--shadow);
+}
+
+nav{display:flex;gap:12px;}
+
+.btn{
+  text-decoration:none;
+  padding:10px 16px;
+  border-radius:10px;
+  font-weight:600;
+  font-size:14px;
+  border:1px solid #e4e7eb;
+  color:var(--muted);
+}
+
+.btn.primary{
+  background:var(--accent);
+  color:white;
+  border:none;
+}
+
+main.hero{
+  display:grid;
+  grid-template-columns:1fr 340px;
+  gap:32px;
+}
+
+.profile-card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:24px;
+  box-shadow:var(--shadow);
+  display:grid;
+  grid-template-columns:120px 1fr;
+  gap:22px;
+}
+
+.avatar{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  overflow:hidden;
+  border:3px solid white;
+  box-shadow:0 6px 16px rgba(108,99,255,0.25);
+}
+
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:20px;
+  box-shadow:var(--shadow);
+  margin-top:32px;
+}
+
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:16px;
+  margin-top:10px;
+}
+
+.project{
+  background:white;
+  border-radius:10px;
+  padding:16px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+.chip{
+  background:var(--accent-light);
+  color:var(--accent);
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:600;
+}
+
+@media(max-width:900px){
+  main.hero{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+<header>
+  <div class="brand">
+    <div class="logo">VP</div>
+    <div>
+      <h1>Vishnupriya M</h1>
+      <p>B.E – Electronics and Communication Engineering</p>
+    </div>
+  </div>
+
+  <nav>
+    <a class="btn" href="#education">Education</a>
+    <a class="btn" href="#projects">Projects</a>
+    <a class="btn" href="#internships">Internships</a>
+    <a class="btn" href="#contact">Contact</a>
+    <a class="btn primary" href="YOUR_RESUME_LINK">Resume</a>
+  </nav>
+</header>
+
+<main class="hero">
+
+<div class="intro">
+  <h2>ECE Engineer with a strong interest in Web Development and Automation.</h2>
+  <p>
+    Dedicated and enthusiastic Electronics and Communication Engineering student with hands-on
+    experience in <strong>Java, HTML, CSS, Python</strong> and real-world project development.
+    Seeking opportunities to grow professionally in a challenging environment.
+  </p>
+</div>
+
+<div class="profile-card">
+  <div class="avatar">
+    <img src="Vishnupriya_image.jpeg" alt="Vishnupriya M">
+  </div>
+
+  <div>
+    <strong style="font-size:18px;">Vishnupriya M</strong><br/>
+    <span style="color:var(--muted);font-size:13px;">
+      Web Development • Programming
+    </span>
+
+    <div style="margin-top:12px;">
+      <div style="font-size:13px;color:var(--muted);">Location</div>
+      <strong>Thiruvallur, India</strong>
+    </div>
+
+    <div style="margin-top:12px;">
+      <div style="font-size:13px;color:var(--muted);">Skills</div>
+      <div style="margin-top:6px;">
+        <span class="chip">Java</span>
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">Python</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Git</span>
+        <span class="chip">Linux</span>
+      </div>
+    </div>
+
+    <div style="margin-top:12px;display:flex;gap:10px;">
+      <a class="btn primary" href="https://www.linkedin.com/in/vishnupriya-m-150458311">LinkedIn</a>
+      <a class="btn" href="https://github.com/vishnupriya-173">GitHub</a>
+    </div>
+  </div>
+</div>
+</main>
+
+<section id="education" class="card">
+<h3>Education</h3>
+<ul style="margin-top:12px;color:var(--muted);padding-left:18px;">
+  <li><strong>B.E – Electronics and Communication Engineering</strong><br>
+      Velammal Engineering College (2022 – 2026) — CGPA: 8.3</li>
+  <li><strong>HSC – 2022</strong> — 88.5%</li>
+  <li><strong>SSLC – 2020</strong> — 84.4%</li>
+</ul>
+</section>
+
+<section id="projects" class="card">
+<h3>Projects</h3>
+<div class="projects">
+
+  <div class="project">
+    <h4>Automation Switch Off Charger with Voltage Doubler</h4>
+    <p>
+      Automatically switches off battery charging once voltage exceeds 13.2V,
+      improving safety and efficiency.
+    </p>
+    <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;">
+      <span class="chip">Voltage Doubler</span>
+      <span class="chip">Relay</span>
+      <span class="chip">PCB</span>
+    </div>
+  </div>
+
+  <div class="project">
+    <h4>Web Development Projects</h4>
+    <p>
+      Designed and developed a personal portfolio, perfume web app, and calculator
+      using modern web technologies.
+    </p>
+    <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;">
+      <span class="chip">HTML</span>
+      <span class="chip">CSS</span>
+      <span class="chip">JavaScript</span>
+    </div>
+  </div>
+
+  <div class="project">
+    <h4>Gemini AI Chatbot</h4>
+    <p>
+      Built an AI chatbot using Gemini API with dynamic user interaction and real-time
+      response generation.
+    </p>
+    <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;">
+      <span class="chip">Gemini API</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">HTML & CSS</span>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<section id="internships" class="card">
+<h3>Internships</h3>
+<ul style="margin-top:12px;color:var(--muted);padding-left:18px;">
+  <li>
+    <strong>Inplant Training – Embedded Systems & IoT</strong><br>
+    Panteche Learning Pvt. Ltd. (June 2024)
+  </li>
+  <li>
+    <strong>Internship – Automated Deployment using Jenkins</strong><br>
+    BICS Global Pvt. Ltd. (December 2024)
+  </li>
+</ul>
+</section>
+
+<section id="contact" class="card">
+<h3>Contact</h3>
+<p style="color:var(--muted);">
+Email: <strong>vishnupmurugan17@gmail.com</strong><br>
+Phone: <strong>6369727732</strong>
+</p>
+</section>
+
+<footer style="margin-top:40px;text-align:center;color:var(--muted);">
+© 2026 Vishnupriya M | Built with ❤️
+</footer>
+
+</div>
+</body>
+</html>
